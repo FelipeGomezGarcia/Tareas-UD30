@@ -1,13 +1,12 @@
 function tipoCadena(frase) {
     var minuscula = false;
     var mayuscula = false;
-    frase.replace(" ", "");
-    var letras = frase.split("");
+    var sinEspacios = frase.replaceAll(" ", "");
+    var letras = sinEspacios.split("");
     for (let i = 0; i < letras.length; i++) {
-        console.log(letras[i])
-      if (letras[i]== letras[i].toUpperCase) {
+      if (letras[i]== letras[i].toUpperCase()) {
         mayuscula = true;
-      }else if (letras[i] == letras[i].toLowerCase) {
+      }else if (letras[i] == letras[i].toLowerCase()) {
         minuscula = true
       }
     }
